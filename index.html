@@ -1,24 +1,361 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<html lang="en">
 
-    <h1>Hello World</h1>
-    
-    <script src="" async defer></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Martin Soto | Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="cursor-follower"></div>
+
+    <header class="glass-nav">
+        <nav>
+            <div class="logo">P M S</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line">PABLO</span>
+                    <span class="line">MARTIN</span>
+                    <span class="line highlight">SOTO</span>
+                </h1>
+                <p class="hero-subtitle">Software Developer &mdash; 18+ Years Experience</p>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn primary">View Experience</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract geometric shapes for animation -->
+                <div class="shape circle"></div>
+                <div class="shape square"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a software developer with 18 years of experience, delivering efficient, scalable
+                            software solutions. Skilled in Java, JavaScript, and Python, I have developed web
+                            applications and services across industries such as telecommunications, finance, insurance,
+                            and health.</p>
+                        <br>
+                        <p>Known for handling projects of varying complexity and excelling in team environments, I
+                            bridge the gap between technical expertise and adaptability. My background includes
+                            modernizing legacy systems, building microservices architectures, and leading backend
+                            transitions.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">18+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Shell Script</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring Cloud</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">JPA / Hibernate</span>
+                            <span class="skill-tag">MyBatis</span>
+                            <span class="skill-tag">Apache Camel</span>
+                            <span class="skill-tag">Struts</span>
+                            <span class="skill-tag">JSP</span>
+                            <span class="skill-tag">MapStruct</span>
+                            <span class="skill-tag">Lombok</span>
+                            <span class="skill-tag">JWT</span>
+                            <span class="skill-tag">OpenAPI (Swagger)</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Web Components</span>
+                            <span class="skill-tag">JQuery</span>
+                            <span class="skill-tag">Mustache</span>
+                            <span class="skill-tag">JSON</span>
+                            <span class="skill-tag">NPM</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Data & Storage</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">CouchDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Caffeine Cache</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">RabbitMQ</span>
+                            <span class="skill-tag">ActiveMQ</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">Unix/Linux</span>
+                            <span class="skill-tag">Maven</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools & Methods</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">SVN</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">BitBucket</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">TDD</span>
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Mockito</span>
+                            <span class="skill-tag">SonarQube</span>
+                            <span class="skill-tag">IntelliJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Amplifire</h3>
+                            <p class="role">Software Developer (2025)</p>
+                            <p>Modernized legacy GWT/Javax.rs monolith. Led backend transition for React frontend,
+                                designing separate APIs while maintaining business context.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Jobsity</h3>
+                            <p class="role">Software Developer (2021-2025)</p>
+                            <p>Migrated Play Framework monolith to Spring Boot microservices on AWS/Kubernetes. Used
+                                RabbitMQ, Redis, and Vanilla JS web components.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Intraway</h3>
+                            <p class="role">Software Developer (2019-2021)</p>
+                            <p>Developed telecom platform using Spring Cloud microservices, Postgres, Kafka, and Camunda
+                                BPMN. Integrated client technologies via Apache Camel.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Claro Video</h3>
+                            <p class="role">Software Developer (2017-2019)</p>
+                            <p>Redesigned video transcoder from scratch using Microservices, RabbitMQ, MongoDB, and
+                                CouchDB for high performance and multi-provider support.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Globant</h3>
+                            <p class="role">Software Developer (2016-2017)</p>
+                            <p>Developed JP Morgan Bank apps integrating Bovespa trade market. Used Angular, Java/Rest,
+                                Spring, Oracle, JMS, and MyBatis.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Freelance</h3>
+                            <p class="role">Software Developer (2015-2016)</p>
+                            <p>Developed small applications on demand and WordPress sites. Worked via freelance
+                                platforms for various personal clients.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Mobile Computing</h3>
+                            <p class="role">Software Developer (2013-2015)</p>
+                            <p>Maintained and developed web apps for Quilmes breweries. Refactored critical processes
+                                using Spring, Hibernate, Struts, and Oracle.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Flux IT</h3>
+                            <p class="role">Software Developer (2012-2013)</p>
+                            <p>Developed business management and medical risk analysis systems for OSDE using Java,
+                                Spring, Hibernate, Struts 2, and JBoss.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>G&L Group</h3>
+                            <p class="role">Software Developer (2010-2012)</p>
+                            <p>Implemented home-banking for Credicoop Bank. Migrated EJB 1 to 3 and incorporated
+                                AJAX/JQuery. Used Java, Spring, Hibernate, DB2.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Criterio Informático</h3>
+                            <p class="role">Software Developer (2010)</p>
+                            <p>Developed business management apps for Martina di Trento and TESUR using Java, Spring,
+                                Hibernate, Struts 1, and Oracle 11g.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Software Factory</h3>
+                            <p class="role">Software Developer (2010)</p>
+                            <p>Developed PHP and Android modules for commercial management applications. Used Java, PHP,
+                                Android, MySQL, and Apache.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Teracode</h3>
+                            <p class="role">Software Developer (2009-2010)</p>
+                            <p>Developed Java web crawlers for data collection for Goby.com search engine using Java,
+                                Regex, and Tomcat.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Huenei</h3>
+                            <p class="role">Software Developer (2008-2009)</p>
+                            <p>Developed human resource management web application using Java, Hibernate, ZK, Spring,
+                                and MySQL.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h3>Bachelor of Electronic Arts</h3>
+                        <p>Universidad de 3 de Febrero (2008)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Electronics Technician</h3>
+                        <p>Guidance on Computers (1998)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Circuits and Electronics</h3>
+                        <p>MIT 6.002x (2012)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Solar Energy</h3>
+                        <p>DelftX University (2013)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>JAVA J2SE</h3>
+                        <p>Education IT (2007)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>CCNA</h3>
+                        <p>Cisco Certified Network Associate (2001)</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Web Design</h3>
+                        <p>1999</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Professional Musician</h3>
+                        <p>2014</p>
+                    </div>
+                    <div class="education-card">
+                        <h3>Advanced English</h3>
+                        <p>Language Proficiency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-wrapper">
+                    <p class="contact-text">Interested in working together? Drop me a line.</p>
+                    <div class="contact-buttons">
+                        <a href="mailto:soto.pablo@gmail.com" class="btn primary big-btn">Email Me</a>
+                        <a href="https://www.linkedin.com/in/pablo-martin-soto-4672198" target="_blank"
+                            class="btn secondary big-btn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pablo Martin Soto. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
